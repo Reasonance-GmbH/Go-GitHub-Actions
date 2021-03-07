@@ -7,5 +7,9 @@ ENV GOPATH=/go/bin
 ENV GO111MODULE=on
 COPY go.mod .
 COPY src ./src
-RUN go build src/main.go src/operations.go
+
+# import dependency
+RUN git clone https://github.com/manuel-lang/Go-GitHub-Actions-Dependency.git /usr/local/go/src/manuel-lang/Go-GitHub-Actions-Dependency
+
+RUN go build src/main.go
 CMD ["./main"]
