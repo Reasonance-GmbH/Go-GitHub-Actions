@@ -17,5 +17,5 @@ jobs:
     - name: golangci-lint
       uses: golangci/golangci-lint-action@v2
       with:
-        working-directory: src
+        working-directory: src/
         args: --skip-files="(.*?)_test.go"
