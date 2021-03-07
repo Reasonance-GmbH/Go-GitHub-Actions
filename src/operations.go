@@ -1,7 +1,5 @@
 package main
 
-var z int
-
 // Add adds to integers and returns the value
 func Add(x int, y int) int {
 	return x + y
