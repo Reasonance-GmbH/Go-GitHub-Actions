@@ -12,9 +12,7 @@ jobs:
     steps:
     - name: Install Go
       uses: actions/setup-go@v2
-      env:
-        GOPATH: /home/runner/work/Go-GitHub-Actions
-    - name: Checkout code
+    - name: Checkout Code
       uses: actions/checkout@v2
     - name: golangci-lint
       uses: golangci/golangci-lint-action@v2
